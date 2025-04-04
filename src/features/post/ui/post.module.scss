@@ -1,0 +1,42 @@
+$background-dark: #0f1829;
+$background-light: #f5f7f9;
+
+.postContainer {
+    padding: 12px;
+    overflow: hidden;
+    display: flex;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    background: $background-dark;
+    max-width: 600px;
+    min-width: 200px;
+    max-height: 300px;
+    border-radius: 6px;
+    cursor: pointer;
+    clear: both;
+    
+    @media (prefers-color-scheme: light) {
+        background: $background-light; 
+    }
+    section{
+        display: flex;
+        
+
+     h2 {
+        max-width: 70%;
+        min-width: 50%;
+        margin-bottom: 12px;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+    }
+    
+    p {
+        min-width: 30%;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+        max-width: 50%;
+    }
+}
+}

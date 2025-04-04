@@ -1,0 +1,43 @@
+$foreground-dark: $foreground-dark;
+$background-dark: $background-dark;
+$foreground-light: $foreground-light;
+$background-light: $background-light;
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+  color: $foreground-dark;
+  background: $background-light;
+
+  @media (prefers-color-scheme: dark) {
+    color: $foreground-dark;
+    background: $background-dark;
+  }
+}
+// body{
+//   margin: auto 1245px;
+// }
+* {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: $foreground-light;
+  @media (prefers-color-scheme: dark) {
+    color: $foreground-dark;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

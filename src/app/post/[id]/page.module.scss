@@ -1,0 +1,44 @@
+$foreground-light: #9d9fa0;
+$foreground-dark: #242526;
+
+main.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    // height: auto;
+.back {
+position: absolute;
+padding: 0.5em 1em;
+border: 1px solid $foreground-light;
+top: 100px;
+left: 10%;
+}
+.back:hover {
+background-color: #5a46fc;
+}
+    .containerPost {
+        max-width: 50%;
+        padding: 1em;
+        border: 1px solid $foreground-light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media (prefers-color-scheme: dark) {
+            border: 1px solid $foreground-dark;
+
+        }
+
+        .titleWrapper {
+            text-align: center;
+            margin-bottom: 10px;
+            max-width: 70%;
+            h1{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

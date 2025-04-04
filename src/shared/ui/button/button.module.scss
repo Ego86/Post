@@ -1,0 +1,19 @@
+$background: #5945fc;
+
+button.button {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: $background;
+}
+
+button.button:active {
+    background-color: none; 
+    border: 1px solid $background;
+}
+
+button.active {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid $background;
+
+}
