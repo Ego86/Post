@@ -25,7 +25,6 @@ export default async function Index({
     body: JSON.stringify({ login, password }),
   });
 
-  // Проверка ответа от сервера
   if (!authResponse.ok) {
     console.error("Ошибка аутентификации:", await authResponse.text());
     redirect("/auth");
